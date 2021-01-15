@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content="IE-edge">
+    <link rel="icon" href="imges/logo.webp"/>
+    <title>RIM LAVA</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body a{text-decoration: none;}
+        #signIn-app,.new-acount{transform: scale(1.2);}
+        #signIn-app{
+            position: relative;
+            margin: 78px auto;
+            max-width: 300px;
+            padding-top: 7px;
+            height: 400px;
+            background-color: #f6f8fa;
+            color: #1e2d4c;
+            box-shadow: 4px 5px 5px -6px #222, -3px -4px 5px -6px;
+        }
+        #signIn-app img{
+            display: block;
+            width: 173px;
+            height: 105px;
+            margin: 23px auto 0;
+        }
+        #signIn-app span{
+            font-size: 29px;
+            letter-spacing: 4px;
+            font-weight: 600;
+            margin: 11px auto -9px;
+            display: block;
+            text-align: center;
+        }
+        #signIn-app .sign-in{
+            display: flex;
+            padding-bottom: 9px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 210px;
+        }
+        #signIn-app .sign-in input{
+            display: block;
+            border: 0;
+            outline: 0;
+            width: 255px;
+            font-size: 15px;
+            padding:8px;
+            margin: 10px auto;
+            color: #1e2d4c;
+        }
+        #signIn-app .sign-in a,#signIn-app .sign-in button{
+            width: 100%;
+            text-align: left;
+            padding-left: 33px;
+            margin: -3px 0;
+            font-size: 12px;
+        }
+        #signIn-app .sign-in button{
+            background-color: #2ea44f;
+            padding: 6px;
+            text-align: center;
+            color: #f6f8fa;
+            display: block;
+            margin: 15px 2px -20px;
+            font-size: 22px;
+            outline: 0;
+            border: none;
+            width: 100%;
+        }
+        .new-acount{
+            margin: 0 auto;
+            border: 2px dashed #1e2d4c;
+            border-radius: 11px;
+            text-align: center;
+            padding: 15px;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="signIn-app">
+        <img src="imges/logo.webp">
+        <span>RIM LAVA</span>
+        <div class="sign-in">
+            <form action="">
+                <input type="email" placeholder="Enter your email"/>
+                
+                <input type="password" placeholder="password"/>
+                <a href="">Forgrt password?</a>
+                <button type="submit">Sign-in</button>
+            </form>
+        </div>
+    </div>
+    <div class="new-acount">
+        <span>New in our team: <a href="sign-Up.html">Sign-Up</a></span> <!--THe link-->
+    </div>
+</body>
+</html>
