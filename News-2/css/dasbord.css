@@ -1,0 +1,130 @@
+body{direction: ltr; }
+/******Dachbord-content*********/
+.dachbord-content{
+   /* padding-left: 350px;/*/
+   position: relative;
+}
+.dachbord-content .container{position: relative;}
+.dachbord-content .container>h1{width: 100%;padding: 0 9px 12px;border-bottom: 2px solid #157a88;}
+.dachbord-content .container>i{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #157a88;
+}
+.dachbord-content .numbers{
+    width: 100%;
+    position: relative;
+}
+.dachbord-content .numbers .dash-info{
+    padding: 6px 12px 19px;
+    margin:3px;
+    text-transform: capitalize;
+    background-color: #eee;
+}
+.dachbord-content .numbers .dash-info span{font-size: 21px;color: #ff0057;}
+.dachbord-content .numbers .dash-info>i,.ad-i{
+    top: 10px;
+    text-decoration: none;
+    background-color: #157a88;
+    padding: 9px;
+    color: #eee;
+    display: block;
+    cursor: pointer;
+}
+.dachbord-content .add .modal-content .btn{
+    border: none;
+    outline: 0;
+    border-radius: 0;
+    margin-left:6px;
+    padding:5px 25px!important;
+}
+.dachbord-content .add .modal-content .form-control{
+    border-radius: 0;
+    box-shadow:unset;
+    font-size: 16px;
+    margin-bottom: 8px;
+    list-style: 1.5;
+}
+/**************Rank**************/
+.rank{margin-top: 42px;}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+.rank .panel{max-height: 400px; overflow: auto}
+.rank thead{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c2d4e;
+}
+.rank thead td{text-transform: capitalize;}
+.rank .panel-default>.panel-heading {font-size: 21px;}
+.rank .panel-default>.panel-heading span{color: #f00; text-transform: capitalize; font-size: 24px;}
+.rank tbody tr i{
+    float: right;
+    padding:6px 22px 10px 8px;
+}
+.rank tbody tr i:hover{color: #f00;transform: rotateZ(13deg); cursor: pointer;}
+/**change-modal**/
+.change-modal .modal-content {
+    text-align: right;}
+.change-modal p{
+text-align: left!important;font-size: 1.5em!important;
+}
+.change-modal .modal-content a{
+    padding: 17px 16px;
+    text-align: center;
+    margin: 0 4px;
+    margin-top: 29px;
+    font-size: 16px;
+    line-height: 0.5;
+    display: inline-block;
+    background-color: #0ed10e;
+}
+.change-modal .modal-content>a:last-of-type{background-color: red;}
+.change-modal select{
+    float: left;
+    border: none;
+    outline: 0;
+    width: 20%;
+    margin-left: 2%;
+    cursor: pointer;
+    font-size: 18px;
+    background-color:#157a88;
+    color: #b5b5b5;
+    padding: 5px;
+}
+.change-modal option{
+    outline: 0;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+  @media(max-width:1200px){
+    .dachbord-content .numbers .dash-info h3{
+        font-size: 18px;
+      }
+  }
+  @media(max-width:500px){
+    .dachbord-content .numbers .dash-info h3{
+        font-size: 15px;
+      }
+      .dachbord-content .numbers .dash-info span{
+        font-size: 18px;
+      }
+      .rank thead {font-size: 13px;}
+      .rank tbody{font-size: 11px;}
+      aside{
+          width:300px;
+      }
+  }

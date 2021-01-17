@@ -1,0 +1,210 @@
+
+/***************************Content****************************************/
+
+/***********Slider**********/
+.slider{
+    position: relative;
+    width: 60%;
+}
+.slider .carousel {
+    position: relative;
+    top: 150px;
+}
+.slider .item>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.slider .item div>a {
+    width: 216px;
+    padding-top: 7px;
+    position: relative;
+    height: 178px;
+}
+.slider .item div>a img{
+    height: 100%;
+    width: 100%;
+}
+.slider .item div>a span{
+    bottom: 22px;
+    position: absolute;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 7px;
+    color: #fff;
+}
+.slider .carousel-control.left,.slider .carousel-control.right{
+    background-image: none;
+    opacity: 0;
+}
+.slider .carousel-inner:hover .carousel-control.left,.slider .carousel-inner:hover .carousel-control.right{
+    opacity: 1;
+}
+
+/***********Ad**********/
+.content .ad:not(:first-child){
+    margin-top: 61px;
+}
+
+/*************videos***********/
+.videos-container{
+    position: relative;
+    top: 154px;
+    width: 60%;
+}
+.videos-container>span:first-child{
+    margin-right: 21px;
+    margin-bottom: 11px;
+}
+.videos-container .videos-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 411px;
+    overflow: hidden;
+}
+.videos-container .videos-content a{
+    max-width: 150px;
+    max-height: 102px;
+    position: relative;
+    overflow: hidden;
+}
+.videos-container .videos-content a img{
+    width: 120px;
+    height: 74px;
+    margin: 4px 6px;
+}
+.videos-container .videos-content a span{
+    display: inline-block;
+    padding: 0 7px;
+    max-width: 100px;
+}
+.videos-container>button{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 29px;
+    outline: 0;
+    border-radius: 0;
+}
+/*******************Sports***************/
+.sports{
+    position: relative;
+    top: 181px;
+    width: 65%;
+}
+.sports .right{
+    float: right;
+    width: 49%;
+    position: absolute;
+    margin: 10px 0;
+}
+.sports .right img{
+    width: 100%;
+}
+.sports .right span{
+    display: block;
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #000;
+    font-size: 18px;
+}
+
+.sports div:nth-of-type(2){
+    float: left;
+    width: 51%;
+    margin:39px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sports div:nth-of-type(2) a{
+    margin: 9px;
+    position: relative;
+}
+.sports div:nth-of-type(2) a img{
+    width: 100px;
+    height: 70px;
+    float: right;
+}
+.sports div:nth-of-type(2) a span{
+    display: block;
+    font-size: 12px;
+    float: right;
+    padding-top: 17px;
+    padding-right: 10px;
+    line-height: 1.2;
+    width: 126px;
+    height: 60px;
+    overflow: hidden;
+    color: #707070;
+}
+.sports div:nth-of-type(2) a span:nth-of-type(2){
+    display: inline-block;
+    color: #979797;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: -12px;
+    right: 111px;
+    padding: 12px;
+}
+
+
+/*****Media****/
+@media(max-width:1420px) and (min-width:1200px){
+    .aside{left: 134px;}
+}
+@media(max-width:1200px){
+    .slider .item div>a {
+        width: 160px;
+        padding-top: 7px;
+        position: relative;
+        height: 158px;
+    }
+    .slider .item>div{justify-content: flex-start;}
+    .aside{left: 85px;}
+}
+@media(max-width:992px){
+    .slider{width: 100%;}
+    .aside{
+        float: none;
+        position: absolute;
+        top: 107%;
+        right: 0;
+        width: 97%;
+        padding: 16px;
+        max-width: none;
+    }
+    .content .ad{width: 100%;}
+
+    .videos-container{width: 100%;}
+    .videos-container .videos-content a img {width: 150px;margin: 4px 10px;}
+    .videos-container .videos-content{justify-content: center;}
+    .sports,.sports .right,.sports .right img{width: 100%;}
+    .sports div:nth-of-type(2){float: none;width: 100%;margin-top:556px;}
+    .sports div:nth-of-type(2) a img {transform: scale(1.5);}
+    .sports div:nth-of-type(2) a span {padding-right: 46px;line-height: 3.2;width: auto;float: none;}
+    .sports div:nth-of-type(2) a span:nth-of-type(2) {right: 134px;}
+    footer {
+        top: 155%;
+    }
+}
+@media(max-width:768px){
+    .slider .item>div {justify-content: space-around;}
+    .sports div:nth-of-type(2){float: none;width: 100%;margin-top:538px;}
+}
+@media(max-width:600px){
+    .accses .navbar {top: 64px;}
+    .logo h1{font-size: 26px;}
+    .accses nav .collapse>ul {flex-direction: column;}
+    .accses nav .collapse>ul .item {width: 100%;}
+    .nav>li{width: 100%;}
+    .slider .item div>a {max-width: 227px;}
+    .aside{padding: 10px;}
+    .sports div:nth-of-type(2){float: none;width: 100%;margin-top: 432px;}
+    footer {margin-top: 60px;top: 150%;}
+}

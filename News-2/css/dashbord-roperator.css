@@ -1,0 +1,30 @@
+body{direction: ltr; }
+/******reborter-content*********/
+
+.reborter-content>h1{
+    display: inline-block;
+    width: 100%;
+    font-size: 38px;
+    border-bottom: 2px solid #157a88;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.reborter-content>i{
+    font-size: 36px;
+    color: #157a88;
+    display: inline-block;
+    top: 47px;
+    right: 37px;
+    position: absolute;
+    cursor: pointer;
+}
+.reporter-add{padding-top: 20px;}
+
+
+/**model***/
+.change-info-container .modal-content {
+    text-align: left;
+    margin: 2% auto;
+    color: #157a88;
+
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content="IE-edge">
+    <link rel="icon" href="imges/logo.webp"/>
+    <title>RIM LAVA</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body a{text-decoration: none;}
+        #signUp-app{
+            position: relative;
+            margin: 16px auto;
+            max-width: 350px;
+            padding-top: 7px;
+            height: 539px;
+            background-color: #f6f8fa;
+            color: #1e2d4c;
+            box-shadow: 4px 5px 5px -6px #222, -3px -4px 5px -6px;
+        }
+        #signUp-app img{
+            display: block;
+            width: 173px;
+            height: 105px;
+            margin: 23px auto 0;
+        }
+        #signUp-app span{
+            font-size: 29px;
+            letter-spacing: 4px;
+            font-weight: 600;
+            margin: 11px auto -9px;
+            display: block;
+            text-align: center;
+        }
+        #signUp-app .sign-up{
+            display: flex;
+            padding-bottom: 9px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 350px;
+        }
+        #signUp-app .sign-up input{
+            display: block;
+            border: 0;
+            outline: 0;
+            width: 300px;
+            font-size: 15px;
+            padding: 8px;
+            margin: 10px auto;
+            color: #1e2d4c;
+        }
+        #signUp-app .sign-up .sign-up-user-information{
+            display: flex;
+            width: 300px;
+        }
+        #signUp-app .sign-up .sign-up-user-information input{
+            display: inline-block;
+            width: 50%;
+        }
+        #signUp-app .sign-up .sign-up-user-information input:first-of-type{margin-right: 16px;}
+        #signUp-app .sign-up button{
+            text-align: left;
+            padding-left: 33px;
+            background-color: #2ea44f;
+            padding: 6px;
+            text-align: center;
+            color: #f6f8fa;
+            display: block;
+            margin: 15px 2px -20px;
+            font-size: 22px;
+            width: 100%;
+            outline: 0;
+            border: none;
+        }
+        .old-acount{
+            margin: 17px auto;
+            border: 2px dashed #1e2d4c;
+            border-radius: 11px;
+            text-align: center;
+            padding: 15px;
+            max-width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="signUp-app">
+        <img src="imges/logo.webp">
+        <span>RIM LAVA</span>
+        <div class="sign-up">
+            <form action="">
+                <div class="sign-up-user-information">
+                    <input type="text" placeholder="Frist name"/>
+                    <input type="text" placeholder="Last name"/>
+                </div>
+                <input type="text" placeholder="User name"/>
+                <input type="email" placeholder="Enter your email"/>
+                
+                <input type="password" placeholder="password"/>
+                <input type="password" placeholder="Re-password"/>
+                <button type="submit">Goin our team</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="old-acount">
+        <span>I'm already in the team: <a href="sign-in.html">ٍٍSign-in</a></span>        <!--THe link-->
+    </div>
+</body>
+</html>

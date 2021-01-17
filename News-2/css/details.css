@@ -1,0 +1,126 @@
+
+.video-container{position: relative;}
+.adVideo{
+    position: absolute;
+    opacity: 0;
+}
+.adVideo video{
+    width: 100%;
+    height: 100%;
+}
+.opacity{opacity:1!important}
+.opacity video{
+    width: 100%;
+    height: 100%;
+}
+/*********************************Content**********************/
+.detalies-content{
+    width: 65%;
+    position: relative;
+    top: 147px;
+}
+.detalies-content .info .h1{
+    font-size: 48px;
+    margin-top: 0;
+}
+.detalies-content .info .h1+label{
+    position: absolute;
+    top: 74px;
+    right: 146px;
+    opacity: 0.8;
+}
+
+.detalies-content .info span{margin-bottom: 8px;}
+.detalies-content .video-container iframe,.adVideo{
+    width: 100%;
+    height: 400px;
+}
+.detalies-content .video-container .adVideo>span{
+    position: absolute;
+    z-index: 9;
+    display: none;
+    top: 20%;
+    cursor: pointer;
+    padding: 6px;
+    right: 8px;
+    background-color: #0000003b;
+    color: #fff;
+}
+.detalies-content iframe+p{
+    position: relative;
+    line-height: 2;
+    margin-top: 44px;
+    text-indent: 25px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.detalies-content .ad{
+    top: 0;
+}
+.detalies-content .share{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 32px;
+    border: 2px dashed #5a5a5a;
+}
+.detalies-content .share>svg{cursor: pointer;}
+
+/*****Aside*****/
+.aside {
+    width: 24%;
+    max-width: 24%;
+}
+
+/*************Footer***************/
+footer {
+    bottom: -449px;
+}
+
+/*****Media****/
+@media(max-width:1420px) and (min-width:1200px){
+    .aside{left: 134px;}
+}
+@media(max-width:1200px){
+    .slider .item div>a {
+        width: 160px;
+        padding-top: 7px;
+        position: relative;
+        height: 158px;
+    }
+    .slider .item>div{justify-content: flex-start;}
+    .aside{left: 10%;width: 36%; }
+}
+@media(max-width:992px){
+    .slider{width: 100%;}
+    .aside{
+        float: none;
+        position: absolute;
+        top: 113%;
+        right: 0;
+        width: 97%;
+        padding: 16px;
+        max-width: none;
+    }
+    .detalies-content{width: 100%;}
+
+    
+    footer {bottom: -122%;}
+}
+@media(max-width:768px){
+    .slider .item>div {justify-content: space-around;}
+    .sports div:nth-of-type(2){float: none;width: 100%;margin-top:538px;}
+}
+@media(max-width:600px){
+    .accses .navbar {top: 64px;}
+    .logo h1{font-size: 26px;}
+    .accses nav .collapse>ul {flex-direction: column;}
+    .accses nav .collapse>ul .item {width: 100%;}
+    .nav>li{width: 100%;}
+    .slider .item div>a {max-width: 227px;}
+    .aside{padding: 10px;}
+    .sports div:nth-of-type(2){float: none;width: 100%;margin-top: 432px;}
+    footer {bottom: -106%;}
+}
